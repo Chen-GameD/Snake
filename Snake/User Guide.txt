@@ -1,0 +1,13 @@
+***Snake***
+Find Snake.HTML to run the game
+***====***
+
+
+Game operation button:
+A£ºleft
+D£ºright
+W£ºup
+S£ºdown
+
+
+Author£ºChen Mingyuan

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Snake</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <style>
+        .con{
+            /* width: 1000px;
+            height: 800px; */
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        body {
+            position: absolute;
+        }
+
+        .map {
+            width: 800px;
+            height: 600px;
+            background-color: #ccc;
+            position: relative;
+        }
+
+        .score {
+            height: 600px;
+            width: 100px;
+            background-color: gold;
+            position: absolute;
+            top: 0px;
+            left: 805px;
+        }
+
+        .score .sco {
+            display: block;
+            height: 20px;
+            font-size: 30px;
+            margin-top: 200px;
+            text-align: center;
+        }
+
+        .score .num {
+            display: block;
+            width: 100%;
+            height: 600px;
+            text-align: center;
+            line-height: 100%;
+            font-size: 2em;
+        }
+        
+        .start{
+            display: block;
+            position: absolute;
+            width: 300px;
+            left: 270px;
+            top: 200px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="con">
+        <div class="map"></div>
+        <div class="score"> 
+            <span class="sco">score</span>
+            <br>
+            <span class="num" id="number">0</span>
+        </div>
+        <div class="start btn btn-large btn-block btn-primary" onclick="this.style.display='none';game.init()">start</div>
+    </div>
+
+
+    <script src="JavaScript/Game.js"></script>
+    <script src="JavaScript/Snake.js"></script>
+    <script src="JavaScript/Food.js"></script>
+    <script>
+        var map = document.querySelector(".map");
+        var game = new Game(map);
+        // game.init();
+    </script>
+</body>
+
+</html>
